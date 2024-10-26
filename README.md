@@ -34,12 +34,10 @@
 ## Установка
 
 ### 1. Клонируйте репозиторий
-
 ```bash
 git clone https://github.com/mefelin/Dispatch-control_SynapseSquad.git
 cd Dispatch-control_SynapseSquad
-
+```
 ### 2. Установка необходимых пакетов
-
 Убедитесь, что вы находитесь в корневой папке проекта.
-Примечание: Если возникнут проблемы с установкой detectron2, обратитесь к руководству по установке Detectron2 для вашей операционной системы.
+> **Примечание**: Если возникнут проблемы с установкой `detectron2`, обратитесь к [руководству по установке Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) для вашей операционной системы.
