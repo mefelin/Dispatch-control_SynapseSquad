@@ -36,5 +36,5 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/yourusername/railway-monitoring-app.git
-cd railway-monitoring-app
+git clone https://github.com/mefelin/Dispatch-control_SynapseSquad.git
+cd Dispatch-control_SynapseSquad
