@@ -217,9 +217,9 @@ class FileAnalyzerApp:
             # Конвертация в PIL для добавления текста
             display_frame = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
             draw = ImageDraw.Draw(display_frame)
-            draw.text((10, 30), left_track_status, font=self.font,
+            draw.text((10, 10), left_track_status, font=self.font,
                       fill=(255, 0, 0) if left_track_occupied else (0, 255, 0))
-            draw.text((10, 60), right_track_status, font=self.font,
+            draw.text((10, 30), right_track_status, font=self.font,
                       fill=(255, 0, 0) if right_track_occupied else (0, 255, 0))
             if person_risk_detected:
                 draw.text((frame.shape[1] - 300, 30), person_risk_status, font=self.font, fill=(255, 165, 0))
