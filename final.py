@@ -229,7 +229,7 @@ class FileAnalyzerApp:
             frame_with_text = cv2.cvtColor(np.array(display_frame), cv2.COLOR_RGB2BGR)
             visualizer = Visualizer(frame_with_text[:, :, ::-1], MetadataCatalog.get("Railway_Dataset"), scale=1.2)
             out = visualizer.draw_instance_predictions(instances)
-            cv2.imshow("Анализ видео", out.get_image()[:, :, ::-1])
+            # cv2.imshow("Анализ видео", out.get_image()[:, :, ::-1])
 
             current_frame += 1
             self.progress_bar["value"] = current_frame
