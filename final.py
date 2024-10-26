@@ -195,7 +195,8 @@ class FileAnalyzerApp:
                 if class_id == 1:  # Человек
                     for j, other_mask in enumerate(pred_masks):
                         other_class_id = pred_classes[j].item()
-                        if other_class_id in self.train_classes or other_class_id == self.railway_track_class:
+                        if ((other_class_id in self.train_classes and other_class_id != self.special_equipment_class)
+                                or other_class_id == self.railway_track_class):
                             if (mask & other_mask).sum().item() > 0:
                                 person_risk_detected = True
                                 self.person_risk_count += 1
